@@ -8,6 +8,9 @@ public class OrderRequest {
 
     private String products;
 
+    public OrderRequest() {
+    }
+
     public OrderRequest(String clientId, String paymentPlan, String products) {
         this.clientId = clientId;
         this.paymentPlan = paymentPlan;
