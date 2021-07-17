@@ -1,6 +1,6 @@
 package com.rbittencourt.pa.orderreceiver.application.order;
 
-public class OrderRequest {
+public class EcommerceOrderRequest {
 
     private String clientId;
 
@@ -8,10 +8,10 @@ public class OrderRequest {
 
     private String products;
 
-    public OrderRequest() {
+    public EcommerceOrderRequest() {
     }
 
-    public OrderRequest(String clientId, String paymentPlan, String products) {
+    public EcommerceOrderRequest(String clientId, String paymentPlan, String products) {
         this.clientId = clientId;
         this.paymentPlan = paymentPlan;
         this.products = products;

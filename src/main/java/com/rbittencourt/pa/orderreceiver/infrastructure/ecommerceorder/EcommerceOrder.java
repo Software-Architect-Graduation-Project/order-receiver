@@ -1,4 +1,4 @@
-package com.rbittencourt.pa.orderreceiver.infrastructure.order;
+package com.rbittencourt.pa.orderreceiver.infrastructure.ecommerceorder;
 
 import org.hibernate.annotations.CreationTimestamp;
 
@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 import static javax.persistence.GenerationType.IDENTITY;
 
 @Entity(name = "order_requested")
-public class Order {
+public class EcommerceOrder {
 
     @Id
     @GeneratedValue(strategy = IDENTITY)
@@ -31,10 +31,10 @@ public class Order {
     @Column
     private String products;
 
-    public Order() {
+    public EcommerceOrder() {
     }
 
-    public Order(String clientId, String paymentPlan, String products) {
+    public EcommerceOrder(String clientId, String paymentPlan, String products) {
         this.clientId = clientId;
         this.paymentPlan = paymentPlan;
         this.products = products;
