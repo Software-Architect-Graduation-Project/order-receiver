@@ -1,3 +1,6 @@
+server:
+  port : 8085
+
 spring:
   application:
     name: order-receiver
@@ -19,3 +22,6 @@ spring:
     hikari:
       minimumIdle: 2
       maximumPoolSize: 20
+
+kafka:
+  bootstrapAddress: localhost:9092
