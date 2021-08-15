@@ -1,3 +1,6 @@
+server:
+  servlet:
+    context-path: /order-receiver
 spring:
   application:
     name: order-receiver
